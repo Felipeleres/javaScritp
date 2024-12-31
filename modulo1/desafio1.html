@@ -1,0 +1,22 @@
+<meta charset = "UTF-8">
+
+	<script> 
+
+		alert("Analisador de triangulo: ")
+
+		var a = +prompt("Digite o lado a do triangulo: ");
+		var b = +prompt("Digite o lado b do triangulo: ");
+		var c = +prompt("Digite o lado c do triangulo: ");
+
+		if ((a +b)> c && (a+c)>b && (b+c)>a) {
+			if(a == b && b == c){
+				document.write("é um triangulo equilátero.");
+			} else if( a != b & b!=c){
+				document.write("é um triangulo escaleno.");
+			}else if(a == b || b ==c){
+				document.write("é um triangulo isósceles.");
+			}
+		} else {
+			document.write("As medidas informadas não formam um triangulo.");
+		}
+	</script>
