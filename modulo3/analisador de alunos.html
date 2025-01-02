@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+
+<script> 
+
+	alert("Analisador de alunos! ");
+
+	var aluno;
+	var contador = 1;
+	var nota1, nota2, nota3;
+
+	while(contador<=3){
+
+		aluno = prompt("Digite o nome do aluno: ");
+		nota1 = +prompt("Digite a nota da prova 1: ");
+		nota2 = +prompt("Digite a nota da prova 2: ");
+		nota3 = +prompt("Digite a nota da prova 3: ");
+		media = (nota1+nota2+nota3)/3;
+
+		document.write("A média do aluno" + aluno+ " é: "+ media +"<br>");
+		contador = contador + 1 ;
+
+	}
+	
+</script> 
