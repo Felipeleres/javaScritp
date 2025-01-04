@@ -1,0 +1,57 @@
+<meta charset="UTF-8">
+<script>
+
+	alert("Ordenando um vetor! ");
+
+	var vet = new Array(8);
+
+	document.write("###Ordem original####")
+	for(var i = 0; i<8;i++){
+		vet[i] = +prompt("Digite o"+(i+1)+" numero do vetor");
+		document.write(vet[i]+" ");
+	}
+	document.write("<br>");
+	document.write("###Ordem crescente###");
+
+	for(var i = 0; i<7;i++){
+
+		for(var j = i+1; j<8;j++ ){
+
+			if(vet[i] > vet[j]){
+
+				var aux = vet[i];
+				vet[i] = vet[j];
+				vet[j] = aux;			
+			}
+		}
+	}
+
+	for(var i = 0; i<8;i++){
+
+		document.write(vet[i]+" ");
+	}
+
+	document.write("<br>");
+	document.write("### ordem descrecente##");
+
+	for(var i = 0; i<7;i++){
+
+		for(var j = i+1; j<8;j++ ){
+
+			if(vet[i] < vet[j]){
+
+				var aux = vet[i];
+				vet[i] = vet[j];
+				vet[j] = aux;			
+			}
+		}
+	}
+
+	for(var i = 0; i<8;i++){
+
+		document.write(vet[i]+" ");
+	}
+
+
+
+ </script>

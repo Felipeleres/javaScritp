@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+<script>
+
+	alert("Ordenando um vetor! ");
+
+	var vet = new Array(10);
+
+	for(var i = 0; i <10; i++){
+		vet[i] = +prompt("Digite o "+(i+1)+" numero para o vetor!! ");
+	}
+
+	for( i = 0; i<9;i++){
+
+		var menor = i;
+
+		for(var j = i+1;j<10;j++){
+			if(vet[j]< vet[menor]){
+				menor = j;
+			}
+		}
+
+		if(menor != i){
+			var aux = vet[i];
+			vet[i] = vet[menor];
+			vet[menor]=aux;
+		}
+	}
+
+	for(var i=0;i<10;i++){
+
+		document.write(vet[i]);
+		document.write("<br>");
+	}
+ </script>
